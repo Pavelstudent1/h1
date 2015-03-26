@@ -4,7 +4,7 @@ import java.awt.Graphics;
 
 class TablePile extends CardPile {
 
-	TablePile(final int x, final int y, final int c) {
+	TablePile(final int x, final int y, final int c) { //c - номер стопки по счёту
 		// initialize the parent class
 		super(x, y);
 		// then initialize our pile of cards
