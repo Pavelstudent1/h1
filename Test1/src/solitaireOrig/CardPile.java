@@ -20,6 +20,7 @@ class CardPile {
 	// the following are sometimes overridden
 
 	public void addCard(final Card aCard) {
+		
 		aCard.link = firstCard;
 		firstCard = aCard;
 	}

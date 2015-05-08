@@ -18,6 +18,9 @@ public class Solitaire extends Applet {
 
 	@Override
 	public void init() {
+		
+		this.setSize(400, 400);	//задаём размеры главного окна игры
+		
 		// first allocate the arrays
 		allPiles = new CardPile[13];
 		suitPile = new SuitPile[4];

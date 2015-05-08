@@ -4,6 +4,7 @@ import java.awt.Color;
 import java.awt.Graphics;
 
 class Card {
+	
 	final static int club = 3;
 	final static int diamond = 2;
 	final static int spade = 1;
