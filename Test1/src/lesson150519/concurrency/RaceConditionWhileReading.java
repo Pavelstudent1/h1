@@ -19,7 +19,7 @@ public class RaceConditionWhileReading {
 		public void setValue(final int value){ //одного синхро нехватает, т.к. проверка isGood может происходить в момент setValue
 			
 			int calcResult = calc(value);
-			synchronized (this) {  //mutex - mutual exclusive	//критическая секция внутри метода
+			synchronized (this) {  //mutex - mutual exclusive	//критическая секция внутри метода //если объект this захвачен, ни один другой поток не может зайти НИ В ОДНУ крит. секцию данного this 
 				a = value;									    
 				Utils.pause(1000);
 				b = a + calcResult;				
