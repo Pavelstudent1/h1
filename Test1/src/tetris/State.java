@@ -1,6 +1,6 @@
 package tetris;
 
-public class State {
+public class State implements Cloneable{
 
 	Figure _figure;
 	Field _field;
@@ -23,6 +23,12 @@ public class State {
 
 	public void setField(final Field field) {
 		_field = field;
+	}
+	
+	@Override
+	protected Object clone() throws CloneNotSupportedException {
+		
+		return super.clone();
 	}
 
 }
